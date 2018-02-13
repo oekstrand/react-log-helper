@@ -1,0 +1,188 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: "Segoe WPC","Segoe UI", Arial,sans-serif, Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  color: #1E1E1E;
+}
+
+.gp-content {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .gp-sidebar {
+    flex-basis: 30px;
+    padding: 0;
+    height: 100vh;
+    background-color:#333;
+  }
+
+  .gp-sidebar a {
+    display:block;
+    text-align: center;
+    padding:12px;
+    color:#666;
+  }
+ 
+.gp-stretch-flex {
+  flex-grow: 1;  
+}
+
+.gp-table-wrapper {
+  overflow: auto;
+  height: 100vh;
+}
+
+.gp-table {
+    width:100%;
+}
+
+.gp-table th {
+  padding: 0.5em 1em;
+  border: 1px solid #CCCEDB;
+  background-color: #FFFFFF;
+  text-align: left;
+  color: #727475;
+  outline: none;
+  font-weight: normal;
+  white-space: nowrap;
+  border-collapse: collapse;    
+}
+
+.gp-table tr.parent:hover {
+  color: #FFFFFF;
+  background-color: #ccc;
+}
+
+.gp-table tr.parent.selected {
+  color: #FFFFFF;
+  background-color: #007ACC!important;
+  border: 1px solid #007ACC!important;
+}
+
+.gp-table tr.child-row.selected {
+  color: #FFFFFF;
+  background-color: #999!important;
+  border: 1px solid #999!important;
+}
+.gp-table tr.child-row:hover {
+  color: #FFFFFF;
+  background-color: #ccc;
+}
+
+.gp-table td {
+    text-align:left;
+    padding-left:10px;
+}
+
+.gp-child-table {
+  width:100%;
+}
+
+.gp-event-details {
+  width:100%;
+  resize:none;
+  height:calc(100% - 40px);
+}
+
+.gp-fixed-right-pane {
+  flex-basis:500px;
+  padding-left:15px;
+  height: 100%;
+}
+
+span.gp-fixed-width {
+  min-width: 40px;
+  display:inline-block;
+  text-align: right;
+  vertical-align: middle;
+  font-size:14px;
+  padding-right:4px;
+}
+
+  .gp-sidebar a.gp-active {
+    color:#fff;
+  }
+
+  .gp-main-window-container {
+    display:flex;
+    align-items: stretch;
+    height: 100vh;    
+  }
+  
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(~material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),    
+      url(~material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+      url(~material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+      url(~material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+  td .material-icons {
+    vertical-align: middle;
+  }
+  
+  .material-icons.gp-orange { 
+    color:orange;
+   }
+  .material-icons.gp-red {
+     color: red; 
+    }
+    .material-icons.gp-light-blue {
+      color:#95b0db;
+    } 
+
+    
+.gp-h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.gp-h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
